@@ -20,6 +20,6 @@ jobs:
         with:
           node-version: 24
           registry-url: https://registry.npmjs.org
-      - run: npm publish --provenance --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      # Trusted publishing: npm exchanges this workflow's OIDC identity for a publish credential, so no token is stored.
+      - run: npm install -g npm@latest
+      - run: npm publish --access public
