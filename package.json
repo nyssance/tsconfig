@@ -1,0 +1,16 @@
+{
+  "name": "@nyssance/tsconfig",
+  "version": "0.1.0",
+  "description": "The one TypeScript configuration shared by every nyssance project",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyssance/tsconfig.git"
+  },
+  "homepage": "https://github.com/nyssance/tsconfig#readme",
+  "keywords": ["tsconfig", "typescript", "bun", "vite"],
+  "files": ["tsconfig.json", "bun.json", "README.md", "LICENSE"],
+  "publishConfig": {
+    "access": "public"
+  }
+}
