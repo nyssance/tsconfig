@@ -5,8 +5,7 @@
 The one TypeScript configuration shared by every project. A project's own `tsconfig.json` extends it and
 adds only what is specific to that project: `types`, `paths`, `jsx` and `include`.
 
-The options are Vite's `react-ts` template, minus everything that is already a TypeScript 7 default, plus two checks
-that catch real bugs.
+The options are Vite's `react-ts` template, minus everything that is already a TypeScript 7 default, plus `noImplicitOverride`.
 
 ## Usage
 
@@ -48,7 +47,6 @@ A project that runs only on Bun, with no DOM types:
 | `erasableSyntaxOnly` | No `enum`, `namespace` or constructor parameter properties. |
 | `noFallthroughCasesInSwitch` | A `case` must end in `break`, `return` or `throw`. |
 | `noImplicitOverride` | A method that replaces a base class method must say `override`. |
-| `noImplicitReturns` | Every path of a function that returns a value must return one. |
 
 `bun.json` adds `lib: ["ESNext"]` and `types: ["bun"]`: without the DOM library, Bun's own types apply, such as
 `.text()` on a subprocess stream.
