@@ -1,6 +1,6 @@
 {
   "name": "@nyssance/tsconfig",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The one TypeScript configuration shared by every nyssance project",
   "license": "Apache-2.0",
   "repository": {
